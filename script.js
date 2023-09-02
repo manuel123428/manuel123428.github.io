@@ -21,8 +21,15 @@ function drawImage() {
 	ctx.font = '20px Arial';
 	ctx.fillStyle = '#000';
 	const currentDate = new Date();
-	const formattedDate = currentDate.toLocaleDateString();
+	// const formattedDate = currentDate.toLocaleDateString();
+	
+
+	const day = String(d.getDate()).padStart(2, '0');
+	const month = String(d.getMonth() + 1).padStart(2, '0');
+	const year = d.getFullYear();
+	const formattedDate = `${day}/${month}/${year}`;
 	ctx.fillText(formattedDate, 175, 365);
+	
 }
 
 nameInput.addEventListener('input', function () {
