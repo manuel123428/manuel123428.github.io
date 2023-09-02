@@ -20,7 +20,7 @@ function drawImage() {
 	// Add the current date
 	ctx.font = '20px Arial';
 	ctx.fillStyle = '#000';
-	const currentDate = new Date();
+	const d = new Date();
 	// const formattedDate = currentDate.toLocaleDateString();
 	
 
